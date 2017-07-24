@@ -19,10 +19,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 admin.autodiscover()
 import products.views
-import carts
-import orders
-import account
-import marketing
+import carts.views
+import orders.views
+import account.views
+import marketing.views
 
 
 
