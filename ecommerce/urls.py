@@ -26,7 +26,7 @@ admin.autodiscover()
 urlpatterns = [
     #Examples
     url(r'^admin/', admin.site.urls),
-    url(r'^$', 'products.views.home', name='home'),
+    url(r'^$', products.views.home, name='home'),
     url(r'^s/$', 'products.views.search', name='search'),
     url(r'^products/$', 'products.views.all', name='products'),
     url(r'^products/(?P<slug>[\w-]+)/$', 'products.views.single', name='single_product'),
