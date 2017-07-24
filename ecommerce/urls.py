@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 admin.autodiscover()
-# from products import views
+from products import views
 
 
 
