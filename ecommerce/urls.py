@@ -21,7 +21,8 @@ admin.autodiscover()
 from products import views
 from carts import views
 from orders import views
-from 
+from account import views
+from marketing import views
 
 
 
