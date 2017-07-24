@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+{# Load the tag library #}
+{% load bootstrap3 %}
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+{% block content %}
+
+<div class='col-sm-6 col-sm-offset-3' style='margin-top: 50px;'>
+ <div class="container col-sm-6 col-sm-offset-3"><h1><font style="Arial" color="red" ><center>{{ form_title }}</center></font></h1></div>
+<form method='POST' action=''>{% csrf_token %}
+{% bootstrap_form form %}
+
+{% bootstrap_button "SUBMIT" icon="star" button_type="submit" button_class="btn-primary"  %}
+<!--<input type='submit' value='{% if submit_btn %}{{ submit_btn }}{% else %}Submit{% endif %}' class='btn btn-default' />-->
+</form>
+ </div>
+
+{% endblock %}

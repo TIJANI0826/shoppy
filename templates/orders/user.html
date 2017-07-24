@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+{{ user.order_set.all }}
+{{ instance.order_id }}
+{{ instance.status }}
+{{ instance.sub_total }}
+{{ instance.tax_total }}
+{{ instance.final_total }}
+{% endblock %}
